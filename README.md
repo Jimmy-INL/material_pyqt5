@@ -17,6 +17,8 @@
 * Movimiento trigonometrico
 * QTimers
 * QThreads
+* Ventanas Aparte
+* Barras de menu
 
 ### Qt Designer
 
