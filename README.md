@@ -19,6 +19,7 @@
 * QThreads
 * Ventanas Aparte
 * Barras de menu
+* Barras de estado
 
 ### Qt Designer
 
