@@ -4,7 +4,7 @@ from PyQt5.QtGui import QPixmap
 from time import sleep
 from random import randint, uniform
 from math import pi, cos, sin
-from sys import exit
+
 
 class MoveMyImageEvent:
     """
@@ -13,7 +13,6 @@ class MoveMyImageEvent:
     para que la ventana actualice
     la posicion de la imagen
     """
-
     def __init__(self, label, x, y):
         self.label = label
         self.x = x
@@ -22,6 +21,7 @@ class MoveMyImageEvent:
 
 class Food(QThread):
     trigger = pyqtSignal(MoveMyImageEvent)
+
     # pyqtSignal recibe *args que le indican
     # cuales son los tipos de argumentos que seran enviados
     # en este caso, solo se enviara un argumento:
@@ -55,7 +55,6 @@ class Food(QThread):
         # Guardamos los limites de la ventana para que no pueda salirse de ella
         self.max_width = max_width
         self.max_height = max_height
-        #self.trigger.connect(parent.actualizar_imagen)
         self.start()
 
     @property
@@ -84,7 +83,7 @@ class Food(QThread):
             new_x = self.position[0] + cos(self.direction_angle) * self.radio
             new_y = self.position[1] + sin(self.direction_angle) * self.radio
             if (new_x > self.max_width - self.label.width() or new_x < 0
-                or new_y <0 or new_y > self.max_height - self.label.height()):
+                or new_y < 0 or new_y > self.max_height - self.label.height()):
                 self.direction_angle += pi
                 new_x = self.position[0] + cos(
                     self.direction_angle) * self.radio
@@ -130,6 +129,7 @@ class MyWindow(QMainWindow):
         # Recibo el objeto con la información necesaria para mover a la comida
         label = myImageEvent.label
         label.move(myImageEvent.x, myImageEvent.y)
+
 
 if __name__ == '__main__':
     app = QApplication([])
