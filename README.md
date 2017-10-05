@@ -1,15 +1,15 @@
-# material PyQt5
+# Material  extra PyQt5
 
-* Material de PyQt5 de Programación avanzada
+Material de PyQt5 de Programación avanzada
+#### Autores: Hugo Navarrete - Ignacio Acevedo
 
 ### Explicacion General
 * Como funcionan los objetos
-* Mostrar Herencia de Objetos
+* Herencia de Objetos
 
 ### PyQt5
 
 * Señales
-* Ajustar a tamño de pantalla
 * Movimiento y señales de mouse
 * QListView
 * QProgressBar
@@ -28,7 +28,7 @@
 * Usar
 * Mostrar modificacion de imagenes en botones 
 
-
+## To do:
 ### Principales diferencias de PyQt4 a PyQt5
 
 * Modulos distintos
