@@ -1,5 +1,7 @@
 # Material  extra PyQt5
 
+Los Jupyters Notebooks están todos en esta misma carpeta, con excepción del de señales que está en la carpeta 'Señales'
+
 Material de PyQt5 de Programación avanzada
 #### Autores: Hugo Navarrete - Ignacio Acevedo
 
@@ -11,13 +13,10 @@ Material de PyQt5 de Programación avanzada
 
 * Señales
 * Movimiento y señales de mouse
-* QListView
-* QProgressBar
 * Rotacion con Pixmap
-* Movimiento trigonometrico
 * QTimers
 * QThreads
-* Ventanas Aparte
+* Ventanas Aparte (aun no hecho)
 * Barras de menu
 * Barras de estado
 
@@ -31,6 +30,6 @@ Material de PyQt5 de Programación avanzada
 ## To do:
 ### Principales diferencias de PyQt4 a PyQt5
 
-* Modulos distintos
-* Mostrar una adaptación de código
+* Modulos distintos (Agregar link)
+* Mostrar una adaptación de código (Aun pendiente)
 
