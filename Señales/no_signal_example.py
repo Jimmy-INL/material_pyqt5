@@ -1,9 +1,8 @@
 from PyQt5.QtWidgets import QLabel, QMainWindow, QApplication
-from PyQt5.QtCore import QThread, pyqtSignal, QTimer, Qt
+from PyQt5.QtCore import QThread, QTimer
 from PyQt5.QtGui import QPixmap
 from time import sleep
-from random import randint, uniform
-from math import pi, cos, sin
+from random import randint
 
 
 class Food(QThread):
